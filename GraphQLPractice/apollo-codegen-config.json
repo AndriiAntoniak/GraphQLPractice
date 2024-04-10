@@ -1,0 +1,29 @@
+{
+  "schemaNamespace" : "GraphQLSchema",
+  "input" : {
+    "operationSearchPaths" : [
+      "GraphQLPractice/Apollo/Queries.graphql"
+    ],
+    "schemaSearchPaths" : [
+      "GraphQLPractice/Apollo/schema.graphqls"
+    ]
+  },
+  "output" : {
+    "testMocks" : {
+      "none" : {
+      }
+    },
+    "schemaTypes" : {
+      "path" : "GraphQLPractice/Apollo/Schema.swift",
+      "moduleType" : {
+        "embeddedInTarget" : {
+          "name" : "GraphQLPractice"
+        }
+      }
+    },
+    "operations" : {
+      "inSchemaModule" : {
+      }
+    }
+  }
+}
