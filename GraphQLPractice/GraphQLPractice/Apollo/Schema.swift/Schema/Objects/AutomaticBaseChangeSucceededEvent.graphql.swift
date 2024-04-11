@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a 'automatic_base_change_succeeded' event on a given pull request.
   static let AutomaticBaseChangeSucceededEvent = ApolloAPI.Object(
     typename: "AutomaticBaseChangeSucceededEvent",

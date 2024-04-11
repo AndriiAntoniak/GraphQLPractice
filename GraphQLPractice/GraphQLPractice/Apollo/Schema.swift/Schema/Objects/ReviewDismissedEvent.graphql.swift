@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a 'review_dismissed' event on a given issue or pull request.
   static let ReviewDismissedEvent = ApolloAPI.Object(
     typename: "ReviewDismissedEvent",

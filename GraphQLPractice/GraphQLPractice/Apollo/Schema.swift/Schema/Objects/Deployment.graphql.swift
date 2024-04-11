@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents triggered deployment instance.
   static let Deployment = ApolloAPI.Object(
     typename: "Deployment",

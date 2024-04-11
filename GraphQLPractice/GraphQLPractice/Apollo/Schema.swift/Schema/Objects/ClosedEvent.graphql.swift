@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a 'closed' event on any `Closable`.
   static let ClosedEvent = ApolloAPI.Object(
     typename: "ClosedEvent",

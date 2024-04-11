@@ -13,7 +13,9 @@ struct GraphQLPracticeApp: App {
         WindowGroup {
             UserView(
                 viewModel: UserViewModel(
-                    repositoriesNetworking: RepositoriesNetworking()
+                    repositoriesNetworking: RepositoriesNetworking(
+                        graphQLClient: GraphQLClient()
+                    )
                 )
             )
         }

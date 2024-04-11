@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a mention made by one issue or pull request to another.
   static let CrossReferencedEvent = ApolloAPI.Object(
     typename: "CrossReferencedEvent",

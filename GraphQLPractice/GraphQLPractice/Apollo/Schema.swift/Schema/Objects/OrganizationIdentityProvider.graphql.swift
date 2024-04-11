@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// An Identity Provider configured to provision SAML and SCIM identities for
   /// Organizations. Visible to (1) organization owners, (2) organization owners'
   /// personal access tokens (classic) with read:org or admin:org scope, (3) GitHub

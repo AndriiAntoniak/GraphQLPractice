@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Interfaces {
+public extension GraphQLSchema.Interfaces {
   /// Entities that can be updated.
   static let Updatable = Interface(name: "Updatable")
 }

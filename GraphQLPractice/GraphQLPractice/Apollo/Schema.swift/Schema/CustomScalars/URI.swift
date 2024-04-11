@@ -7,7 +7,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema {
+public extension GraphQLSchema {
   /// An RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string.
   typealias URI = String
 

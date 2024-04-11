@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Interfaces {
+public extension GraphQLSchema.Interfaces {
   /// An entry in the audit log.
   static let AuditEntry = Interface(name: "AuditEntry")
 }

@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a comment on a given Commit.
   static let CommitComment = ApolloAPI.Object(
     typename: "CommitComment",

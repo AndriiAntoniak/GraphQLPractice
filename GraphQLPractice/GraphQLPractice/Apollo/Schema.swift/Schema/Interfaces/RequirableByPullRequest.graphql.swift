@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Interfaces {
+public extension GraphQLSchema.Interfaces {
   /// Represents a type that can be required by a pull request for merging.
   static let RequirableByPullRequest = Interface(name: "RequirableByPullRequest")
 }

@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a commit status.
   static let Status = ApolloAPI.Object(
     typename: "Status",

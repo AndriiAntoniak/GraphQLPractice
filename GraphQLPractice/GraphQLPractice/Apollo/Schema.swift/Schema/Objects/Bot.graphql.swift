@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A special type of user which takes actions on behalf of GitHub Apps.
   static let Bot = ApolloAPI.Object(
     typename: "Bot",

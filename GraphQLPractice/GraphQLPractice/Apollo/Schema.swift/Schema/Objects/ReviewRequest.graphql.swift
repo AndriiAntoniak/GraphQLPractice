@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A request for a user to review a pull request.
   static let ReviewRequest = ApolloAPI.Object(
     typename: "ReviewRequest",

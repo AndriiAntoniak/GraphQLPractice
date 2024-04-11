@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// An invitation for a user to be added to a repository.
   static let RepositoryInvitation = ApolloAPI.Object(
     typename: "RepositoryInvitation",

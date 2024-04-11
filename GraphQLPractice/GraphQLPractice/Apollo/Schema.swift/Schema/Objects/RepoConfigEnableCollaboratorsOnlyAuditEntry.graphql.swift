@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Audit log entry for a repo.config.enable_collaborators_only event.
   static let RepoConfigEnableCollaboratorsOnlyAuditEntry = ApolloAPI.Object(
     typename: "RepoConfigEnableCollaboratorsOnlyAuditEntry",

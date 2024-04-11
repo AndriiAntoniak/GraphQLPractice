@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// An external identity provisioned by SAML SSO or SCIM. If SAML is configured on
   /// the organization, the external identity is visible to (1) organization owners,
   /// (2) organization owners' personal access tokens (classic) with read:org or

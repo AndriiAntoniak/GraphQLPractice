@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A branch linked to an issue.
   static let LinkedBranch = ApolloAPI.Object(
     typename: "LinkedBranch",

@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A common weakness enumeration
   static let CWE = ApolloAPI.Object(
     typename: "CWE",

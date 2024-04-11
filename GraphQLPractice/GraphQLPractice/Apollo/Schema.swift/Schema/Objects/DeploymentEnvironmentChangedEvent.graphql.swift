@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a 'deployment_environment_changed' event on a given pull request.
   static let DeploymentEnvironmentChangedEvent = ApolloAPI.Object(
     typename: "DeploymentEnvironmentChangedEvent",

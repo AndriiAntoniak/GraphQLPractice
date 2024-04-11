@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a Git reference.
   static let Ref = ApolloAPI.Object(
     typename: "Ref",

@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// An edit on user content
   static let UserContentEdit = ApolloAPI.Object(
     typename: "UserContentEdit",

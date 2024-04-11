@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A Pinned Discussion is a discussion pinned to a repository's index page.
   static let PinnedDiscussion = ApolloAPI.Object(
     typename: "PinnedDiscussion",

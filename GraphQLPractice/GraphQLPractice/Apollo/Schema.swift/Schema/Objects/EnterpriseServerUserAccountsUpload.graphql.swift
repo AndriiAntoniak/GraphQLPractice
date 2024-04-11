@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A user accounts upload from an Enterprise Server installation.
   static let EnterpriseServerUserAccountsUpload = ApolloAPI.Object(
     typename: "EnterpriseServerUserAccountsUpload",

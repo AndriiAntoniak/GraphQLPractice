@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A Saved Reply is text a user can use to reply quickly.
   static let SavedReply = ApolloAPI.Object(
     typename: "SavedReply",

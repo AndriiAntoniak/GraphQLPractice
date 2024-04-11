@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Metadata for a team membership for org.restore_member actions
   static let OrgRestoreMemberMembershipTeamAuditEntryData = ApolloAPI.Object(
     typename: "OrgRestoreMemberMembershipTeamAuditEntryData",

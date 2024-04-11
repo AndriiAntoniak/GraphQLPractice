@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a 'merged' event on a given pull request.
   static let MergedEvent = ApolloAPI.Object(
     typename: "MergedEvent",

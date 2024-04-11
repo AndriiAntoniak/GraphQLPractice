@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Describes the status of a given deployment attempt.
   static let DeploymentStatus = ApolloAPI.Object(
     typename: "DeploymentStatus",

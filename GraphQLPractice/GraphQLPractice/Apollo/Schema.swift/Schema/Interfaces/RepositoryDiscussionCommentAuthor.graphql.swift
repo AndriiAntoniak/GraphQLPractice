@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Interfaces {
+public extension GraphQLSchema.Interfaces {
   /// Represents an author of discussion comments in repositories.
   static let RepositoryDiscussionCommentAuthor = Interface(name: "RepositoryDiscussionCommentAuthor")
 }

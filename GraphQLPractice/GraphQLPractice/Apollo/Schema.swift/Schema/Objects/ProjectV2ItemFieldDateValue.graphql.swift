@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// The value of a date field in a Project item.
   static let ProjectV2ItemFieldDateValue = ApolloAPI.Object(
     typename: "ProjectV2ItemFieldDateValue",

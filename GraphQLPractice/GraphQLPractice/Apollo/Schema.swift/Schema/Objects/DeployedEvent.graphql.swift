@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a 'deployed' event on a given pull request.
   static let DeployedEvent = ApolloAPI.Object(
     typename: "DeployedEvent",

@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Audit log entry for a org.oauth_app_access_approved event.
   static let OrgOauthAppAccessApprovedAuditEntry = ApolloAPI.Object(
     typename: "OrgOauthAppAccessApprovedAuditEntry",

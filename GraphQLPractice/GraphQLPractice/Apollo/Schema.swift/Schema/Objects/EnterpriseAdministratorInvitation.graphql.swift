@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// An invitation for a user to become an owner or billing manager of an enterprise.
   static let EnterpriseAdministratorInvitation = ApolloAPI.Object(
     typename: "EnterpriseAdministratorInvitation",

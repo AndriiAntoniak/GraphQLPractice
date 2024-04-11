@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Audit log entry for a repo.config.disable_anonymous_git_access event.
   static let RepoConfigDisableAnonymousGitAccessAuditEntry = ApolloAPI.Object(
     typename: "RepoConfigDisableAnonymousGitAccessAuditEntry",

@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents an 'unmarked_as_duplicate' event on a given issue or pull request.
   static let UnmarkedAsDuplicateEvent = ApolloAPI.Object(
     typename: "UnmarkedAsDuplicateEvent",

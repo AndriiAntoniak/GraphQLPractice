@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// An environment.
   static let Environment = ApolloAPI.Object(
     typename: "Environment",

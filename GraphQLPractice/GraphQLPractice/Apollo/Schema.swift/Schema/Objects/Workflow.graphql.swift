@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A workflow contains meta information about an Actions workflow file.
   static let Workflow = ApolloAPI.Object(
     typename: "Workflow",

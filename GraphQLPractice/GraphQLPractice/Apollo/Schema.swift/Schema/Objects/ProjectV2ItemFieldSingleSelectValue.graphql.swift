@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// The value of a single select field in a Project item.
   static let ProjectV2ItemFieldSingleSelectValue = ApolloAPI.Object(
     typename: "ProjectV2ItemFieldSingleSelectValue",

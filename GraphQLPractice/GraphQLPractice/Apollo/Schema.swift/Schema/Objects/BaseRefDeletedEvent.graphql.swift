@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a 'base_ref_deleted' event on a given pull request.
   static let BaseRefDeletedEvent = ApolloAPI.Object(
     typename: "BaseRefDeletedEvent",

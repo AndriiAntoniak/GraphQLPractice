@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a given language found in repositories.
   static let Language = ApolloAPI.Object(
     typename: "Language",

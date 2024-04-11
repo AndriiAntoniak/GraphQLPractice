@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a Git tag.
   static let Tag = ApolloAPI.Object(
     typename: "Tag",

@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// An Issue is a place to discuss ideas, enhancements, tasks, and bugs for a project.
   static let Issue = ApolloAPI.Object(
     typename: "Issue",

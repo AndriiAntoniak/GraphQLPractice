@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a 'head_ref_restored' event on a given pull request.
   static let HeadRefRestoredEvent = ApolloAPI.Object(
     typename: "HeadRefRestoredEvent",

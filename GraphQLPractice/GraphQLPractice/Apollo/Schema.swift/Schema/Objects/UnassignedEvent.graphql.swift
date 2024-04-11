@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents an 'unassigned' event on any assignable object.
   static let UnassignedEvent = ApolloAPI.Object(
     typename: "UnassignedEvent",

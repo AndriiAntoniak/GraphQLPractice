@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// An executed workflow file for a workflow run.
   static let WorkflowRunFile = ApolloAPI.Object(
     typename: "WorkflowRunFile",

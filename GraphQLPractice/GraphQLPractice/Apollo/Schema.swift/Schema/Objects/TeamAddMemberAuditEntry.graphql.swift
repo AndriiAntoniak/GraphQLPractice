@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Audit log entry for a team.add_member event.
   static let TeamAddMemberAuditEntry = ApolloAPI.Object(
     typename: "TeamAddMemberAuditEntry",

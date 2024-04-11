@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Audit log entry for a repo.change_merge_setting event.
   static let RepoChangeMergeSettingAuditEntry = ApolloAPI.Object(
     typename: "RepoChangeMergeSettingAuditEntry",

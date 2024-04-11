@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A check run.
   static let CheckRun = ApolloAPI.Object(
     typename: "CheckRun",

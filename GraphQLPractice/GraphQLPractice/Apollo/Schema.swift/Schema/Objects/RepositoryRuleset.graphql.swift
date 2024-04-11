@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A repository ruleset.
   static let RepositoryRuleset = ApolloAPI.Object(
     typename: "RepositoryRuleset",

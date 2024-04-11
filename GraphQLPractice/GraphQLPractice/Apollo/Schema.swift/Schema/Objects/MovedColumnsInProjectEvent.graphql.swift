@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a 'moved_columns_in_project' event on a given issue or pull request.
   static let MovedColumnsInProjectEvent = ApolloAPI.Object(
     typename: "MovedColumnsInProjectEvent",

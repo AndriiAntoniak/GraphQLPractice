@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents the rollup for both the check runs and status for a commit.
   static let StatusCheckRollup = ApolloAPI.Object(
     typename: "StatusCheckRollup",

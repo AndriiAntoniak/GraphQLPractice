@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Interfaces {
+public extension GraphQLSchema.Interfaces {
   /// Represents any entity on GitHub that has a profile page.
   static let ProfileOwner = Interface(name: "ProfileOwner")
 }

@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A check suite.
   static let CheckSuite = ApolloAPI.Object(
     typename: "CheckSuite",

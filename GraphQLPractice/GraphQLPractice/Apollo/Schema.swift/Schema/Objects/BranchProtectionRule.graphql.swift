@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A branch protection rule.
   static let BranchProtectionRule = ApolloAPI.Object(
     typename: "BranchProtectionRule",

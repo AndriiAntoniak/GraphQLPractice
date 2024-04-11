@@ -3,19 +3,19 @@
 
 import ApolloAPI
 
-protocol GraphQLSchema_SelectionSet: ApolloAPI.SelectionSet & ApolloAPI.RootSelectionSet
+public protocol GraphQLSchema_SelectionSet: ApolloAPI.SelectionSet & ApolloAPI.RootSelectionSet
 where Schema == GraphQLSchema.SchemaMetadata {}
 
-protocol GraphQLSchema_InlineFragment: ApolloAPI.SelectionSet & ApolloAPI.InlineFragment
+public protocol GraphQLSchema_InlineFragment: ApolloAPI.SelectionSet & ApolloAPI.InlineFragment
 where Schema == GraphQLSchema.SchemaMetadata {}
 
-protocol GraphQLSchema_MutableSelectionSet: ApolloAPI.MutableRootSelectionSet
+public protocol GraphQLSchema_MutableSelectionSet: ApolloAPI.MutableRootSelectionSet
 where Schema == GraphQLSchema.SchemaMetadata {}
 
-protocol GraphQLSchema_MutableInlineFragment: ApolloAPI.MutableSelectionSet & ApolloAPI.InlineFragment
+public protocol GraphQLSchema_MutableInlineFragment: ApolloAPI.MutableSelectionSet & ApolloAPI.InlineFragment
 where Schema == GraphQLSchema.SchemaMetadata {}
 
-extension GraphQLSchema {
+public extension GraphQLSchema {
   typealias ID = String
 
   typealias SelectionSet = GraphQLSchema_SelectionSet
@@ -27,9 +27,9 @@ extension GraphQLSchema {
   typealias MutableInlineFragment = GraphQLSchema_MutableInlineFragment
 
   enum SchemaMetadata: ApolloAPI.SchemaMetadata {
-    static let configuration: ApolloAPI.SchemaConfiguration.Type = SchemaConfiguration.self
+    public static let configuration: ApolloAPI.SchemaConfiguration.Type = SchemaConfiguration.self
 
-    static func objectType(forTypename typename: String) -> ApolloAPI.Object? {
+    public static func objectType(forTypename typename: String) -> ApolloAPI.Object? {
       switch typename {
       case "Query": return GraphQLSchema.Objects.Query
       case "User": return GraphQLSchema.Objects.User

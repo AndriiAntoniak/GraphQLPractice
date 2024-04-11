@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Interfaces {
+public extension GraphQLSchema.Interfaces {
   /// Recent projects for the owner.
   static let ProjectV2Recent = Interface(name: "ProjectV2Recent")
 }

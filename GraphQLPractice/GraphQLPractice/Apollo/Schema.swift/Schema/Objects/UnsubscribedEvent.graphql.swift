@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents an 'unsubscribed' event on a given `Subscribable`.
   static let UnsubscribedEvent = ApolloAPI.Object(
     typename: "UnsubscribedEvent",

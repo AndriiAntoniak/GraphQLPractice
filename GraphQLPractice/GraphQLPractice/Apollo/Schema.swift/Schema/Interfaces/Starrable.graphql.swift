@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Interfaces {
+public extension GraphQLSchema.Interfaces {
   /// Things that can be starred.
   static let Starrable = Interface(name: "Starrable")
 }

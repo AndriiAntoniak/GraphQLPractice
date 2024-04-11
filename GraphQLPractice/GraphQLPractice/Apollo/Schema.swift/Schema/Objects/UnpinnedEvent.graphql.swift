@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents an 'unpinned' event on a given issue or pull request.
   static let UnpinnedEvent = ApolloAPI.Object(
     typename: "UnpinnedEvent",

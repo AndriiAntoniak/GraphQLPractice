@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// An Enterprise Server installation.
   static let EnterpriseServerInstallation = ApolloAPI.Object(
     typename: "EnterpriseServerInstallation",

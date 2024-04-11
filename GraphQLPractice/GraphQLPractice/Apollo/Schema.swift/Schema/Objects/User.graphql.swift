@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A user is an individual's account on GitHub that owns repositories and can make new content.
   static let User = ApolloAPI.Object(
     typename: "User",

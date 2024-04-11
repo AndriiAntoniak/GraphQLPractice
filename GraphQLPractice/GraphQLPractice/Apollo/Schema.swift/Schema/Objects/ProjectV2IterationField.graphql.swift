@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// An iteration field inside a project.
   static let ProjectV2IterationField = ApolloAPI.Object(
     typename: "ProjectV2IterationField",

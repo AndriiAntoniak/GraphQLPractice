@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema {
+public extension GraphQLSchema {
   /// The repository's visibility level.
   enum RepositoryVisibility: String, EnumType {
     /// The repository is visible only to users in the same business.

@@ -42,7 +42,9 @@ struct UserView<ViewModel: UserViewModelProtocol>: View {
                 CreateNewRepositoryView(
                     shouldPresentAddRepoView: $shouldPresentAddRepoView,
                     viewModel: CreateRepositoryViewModel(
-                        repositoriesNetworking: RepositoriesNetworking()
+                        repositoriesNetworking: RepositoriesNetworking(
+                            graphQLClient: GraphQLClient()
+                        )
                     )
                 )
             }
@@ -122,7 +124,9 @@ struct UserView<ViewModel: UserViewModelProtocol>: View {
 #Preview {
     UserView(
         viewModel: UserViewModel(
-            repositoriesNetworking: RepositoriesNetworking()
+            repositoriesNetworking: RepositoriesNetworking(
+                graphQLClient: GraphQLClient()
+            )
         )
     )
 }

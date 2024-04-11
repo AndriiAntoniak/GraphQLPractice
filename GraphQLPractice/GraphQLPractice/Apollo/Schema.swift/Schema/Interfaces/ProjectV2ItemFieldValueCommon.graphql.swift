@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Interfaces {
+public extension GraphQLSchema.Interfaces {
   /// Common fields across different project field value types
   static let ProjectV2ItemFieldValueCommon = Interface(name: "ProjectV2ItemFieldValueCommon")
 }

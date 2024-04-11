@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a member feature request notification
   static let MemberFeatureRequestNotification = ApolloAPI.Object(
     typename: "MemberFeatureRequestNotification",

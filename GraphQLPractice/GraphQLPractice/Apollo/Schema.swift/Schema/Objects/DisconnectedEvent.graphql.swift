@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a 'disconnected' event on a given issue or pull request.
   static let DisconnectedEvent = ApolloAPI.Object(
     typename: "DisconnectedEvent",

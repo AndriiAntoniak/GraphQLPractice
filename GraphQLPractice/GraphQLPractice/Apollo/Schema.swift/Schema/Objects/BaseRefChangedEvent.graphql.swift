@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a 'base_ref_changed' event on a given issue or pull request.
   static let BaseRefChangedEvent = ApolloAPI.Object(
     typename: "BaseRefChangedEvent",

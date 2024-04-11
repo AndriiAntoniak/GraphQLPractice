@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Interfaces {
+public extension GraphQLSchema.Interfaces {
   /// Represents a object that belongs to a repository.
   static let RepositoryNode = Interface(name: "RepositoryNode")
 }

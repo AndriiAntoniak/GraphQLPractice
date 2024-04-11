@@ -18,6 +18,10 @@ typealias MutationRepository = GraphQLSchema.AddNewRepositoryWithInputMutation.D
 typealias CreateNewRepoResult = Result<MutationRepository, NetworkingError>
 
 protocol RepositoriesNetworkingProtocol {
+    var graphQLClient: GraphQLClientProtocol? { get }
+    
+    init(graphQLClient: GraphQLClientProtocol?)
+    
     func fetchUser() async -> UserResult
     func fetchRepositories(username: String) async -> RepositoriesResult
     
@@ -25,13 +29,19 @@ protocol RepositoriesNetworkingProtocol {
 }
 
 final class RepositoriesNetworking: RepositoriesNetworkingProtocol {
+    var graphQLClient: GraphQLClientProtocol?
+    
+    init(graphQLClient: GraphQLClientProtocol?) {
+        self.graphQLClient = graphQLClient
+    }
+    
     func fetchUser() async -> UserResult {
-        guard let graphQL = GraphQLClient() else {
+        guard let graphQLClient else {
             return .failure(.corruptedGraphQLClient)
         }
         
         return await withCheckedContinuation { continuation in
-            graphQL.fetch(query: GraphQLSchema.GetUserQuery()) { result in
+            graphQLClient.fetch(query: GraphQLSchema.GetUserQuery()) { result in
                 switch result {
                 case .success(let graphQLResult):
                     guard let user = graphQLResult.data?.viewer else {
@@ -49,12 +59,12 @@ final class RepositoriesNetworking: RepositoriesNetworkingProtocol {
     }
     
     func fetchRepositories(username: String) async -> RepositoriesResult {
-        guard let graphQL = GraphQLClient() else {
+        guard let graphQLClient else {
             return .failure(.corruptedGraphQLClient)
         }
         
         return await withCheckedContinuation { continuation in
-            graphQL.fetch(
+            graphQLClient.fetch(
                 query: GraphQLSchema.GetRepositoriesByUsernameQuery(
                     username: username
                 )
@@ -77,12 +87,12 @@ final class RepositoriesNetworking: RepositoriesNetworkingProtocol {
     }
     
     func createNewRepository(_ input: RepositoryInput) async -> CreateNewRepoResult {
-        guard let graphQL = GraphQLClient() else {
+        guard let graphQLClient else {
             return .failure(.corruptedGraphQLClient)
         }
         
         return await withCheckedContinuation { continuation in
-            graphQL.perform(
+            graphQLClient.perform(
                 mutation: GraphQLSchema.AddNewRepositoryWithInputMutation(
                     input: GraphQLSchema.CreateRepositoryInput(
                         description: input.description ?? nil,

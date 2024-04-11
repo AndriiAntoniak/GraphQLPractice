@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents an 'review_requested' event on a given pull request.
   static let ReviewRequestedEvent = ApolloAPI.Object(
     typename: "ReviewRequestedEvent",

@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a 'connected' event on a given issue or pull request.
   static let ConnectedEvent = ApolloAPI.Object(
     typename: "ConnectedEvent",

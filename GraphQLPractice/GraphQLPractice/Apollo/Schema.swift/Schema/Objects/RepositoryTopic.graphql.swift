@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A repository-topic connects a repository to a topic.
   static let RepositoryTopic = ApolloAPI.Object(
     typename: "RepositoryTopic",

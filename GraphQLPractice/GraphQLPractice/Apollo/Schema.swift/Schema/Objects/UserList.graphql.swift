@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A user-curated list of repositories
   static let UserList = ApolloAPI.Object(
     typename: "UserList",

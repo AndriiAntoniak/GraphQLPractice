@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents an 'unlabeled' event on a given issue or pull request.
   static let UnlabeledEvent = ApolloAPI.Object(
     typename: "UnlabeledEvent",

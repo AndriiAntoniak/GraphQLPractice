@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Interfaces {
+public extension GraphQLSchema.Interfaces {
   /// Represents an owner of a Repository.
   static let RepositoryOwner = Interface(name: "RepositoryOwner")
 }

@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A deployment review.
   static let DeploymentReview = ApolloAPI.Object(
     typename: "DeploymentReview",

@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Audit log entry for a repo.config.disable_sockpuppet_disallowed event.
   static let RepoConfigDisableSockpuppetDisallowedAuditEntry = ApolloAPI.Object(
     typename: "RepoConfigDisableSockpuppetDisallowedAuditEntry",

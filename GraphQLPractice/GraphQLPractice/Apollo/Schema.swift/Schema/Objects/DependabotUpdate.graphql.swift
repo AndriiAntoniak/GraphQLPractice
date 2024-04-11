@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A Dependabot Update for a dependency in a repository
   static let DependabotUpdate = ApolloAPI.Object(
     typename: "DependabotUpdate",

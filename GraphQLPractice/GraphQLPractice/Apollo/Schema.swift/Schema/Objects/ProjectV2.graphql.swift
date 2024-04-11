@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// New projects that manage issues, pull requests and drafts using tables and boards.
   static let ProjectV2 = ApolloAPI.Object(
     typename: "ProjectV2",

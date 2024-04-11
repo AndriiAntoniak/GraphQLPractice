@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A repository contains the content for a project.
   static let Repository = ApolloAPI.Object(
     typename: "Repository",

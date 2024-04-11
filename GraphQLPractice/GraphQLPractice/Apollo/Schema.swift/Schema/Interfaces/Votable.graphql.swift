@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Interfaces {
+public extension GraphQLSchema.Interfaces {
   /// A subject that may be upvoted.
   static let Votable = Interface(name: "Votable")
 }

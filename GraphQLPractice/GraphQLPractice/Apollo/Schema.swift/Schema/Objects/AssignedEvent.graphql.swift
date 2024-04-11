@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents an 'assigned' event on any assignable object.
   static let AssignedEvent = ApolloAPI.Object(
     typename: "AssignedEvent",

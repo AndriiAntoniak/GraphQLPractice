@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A GitHub Enterprise Importer (GEI) organization migration.
   static let OrganizationMigration = ApolloAPI.Object(
     typename: "OrganizationMigration",

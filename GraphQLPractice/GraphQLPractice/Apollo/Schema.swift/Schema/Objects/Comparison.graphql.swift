@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a comparison between two commit revisions.
   static let Comparison = ApolloAPI.Object(
     typename: "Comparison",

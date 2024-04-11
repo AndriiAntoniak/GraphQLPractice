@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A user, team, or app who has the ability to dismiss a review on a protected branch.
   static let ReviewDismissalAllowance = ApolloAPI.Object(
     typename: "ReviewDismissalAllowance",

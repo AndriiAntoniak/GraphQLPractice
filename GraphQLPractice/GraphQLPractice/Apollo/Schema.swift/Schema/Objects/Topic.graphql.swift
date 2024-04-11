@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A topic aggregates entities that are related to a subject.
   static let Topic = ApolloAPI.Object(
     typename: "Topic",

@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A repository deploy key.
   static let DeployKey = ApolloAPI.Object(
     typename: "DeployKey",

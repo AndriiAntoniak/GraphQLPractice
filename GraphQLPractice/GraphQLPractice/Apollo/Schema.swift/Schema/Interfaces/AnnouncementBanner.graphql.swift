@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Interfaces {
+public extension GraphQLSchema.Interfaces {
   /// Represents an announcement banner.
   static let AnnouncementBanner = Interface(name: "AnnouncementBanner")
 }

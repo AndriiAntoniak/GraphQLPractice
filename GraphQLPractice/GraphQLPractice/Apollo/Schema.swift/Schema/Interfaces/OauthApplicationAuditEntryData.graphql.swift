@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Interfaces {
+public extension GraphQLSchema.Interfaces {
   /// Metadata for an audit entry with action oauth_application.*
   static let OauthApplicationAuditEntryData = Interface(name: "OauthApplicationAuditEntryData")
 }

@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a 'removed_from_project' event on a given issue or pull request.
   static let RemovedFromProjectEvent = ApolloAPI.Object(
     typename: "RemovedFromProjectEvent",

@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// An update sent to sponsors of a user or organization on GitHub Sponsors.
   static let SponsorshipNewsletter = ApolloAPI.Object(
     typename: "SponsorshipNewsletter",

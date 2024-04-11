@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a Milestone object on a given repository.
   static let Milestone = ApolloAPI.Object(
     typename: "Milestone",

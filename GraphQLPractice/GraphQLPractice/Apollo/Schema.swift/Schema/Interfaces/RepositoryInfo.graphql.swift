@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Interfaces {
+public extension GraphQLSchema.Interfaces {
   /// A subset of repository info.
   static let RepositoryInfo = Interface(name: "RepositoryInfo")
 }

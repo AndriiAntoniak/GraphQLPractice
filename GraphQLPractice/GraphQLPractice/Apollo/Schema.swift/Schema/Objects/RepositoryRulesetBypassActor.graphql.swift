@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A team or app that has the ability to bypass a rules defined on a ruleset
   static let RepositoryRulesetBypassActor = ApolloAPI.Object(
     typename: "RepositoryRulesetBypassActor",

@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// An OIDC identity provider configured to provision identities for an enterprise.
   /// Visible to enterprise owners or enterprise owners' personal access tokens
   /// (classic) with read:enterprise or admin:enterprise scope.

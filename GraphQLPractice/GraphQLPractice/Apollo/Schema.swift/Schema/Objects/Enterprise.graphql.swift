@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// An account to manage multiple organizations with consolidated policy and billing.
   static let Enterprise = ApolloAPI.Object(
     typename: "Enterprise",

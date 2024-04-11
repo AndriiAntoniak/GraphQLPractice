@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a Git commit part of a pull request.
   static let PullRequestCommit = ApolloAPI.Object(
     typename: "PullRequestCommit",

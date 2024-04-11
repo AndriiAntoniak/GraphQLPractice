@@ -3,10 +3,10 @@
 
 @_exported import ApolloAPI
 
-extension GraphQLSchema {
+public extension GraphQLSchema {
   class AddNewRepositoryWithInputMutation: GraphQLMutation {
-    static let operationName: String = "AddNewRepositoryWithInput"
-    static let operationDocument: ApolloAPI.OperationDocument = .init(
+    public static let operationName: String = "AddNewRepositoryWithInput"
+    public static let operationDocument: ApolloAPI.OperationDocument = .init(
       definition: .init(
         #"mutation AddNewRepositoryWithInput($input: CreateRepositoryInput!) { createRepository(input: $input) { __typename repository { __typename name } } }"#
       ))
@@ -19,49 +19,49 @@ extension GraphQLSchema {
 
     public var __variables: Variables? { ["input": input] }
 
-    struct Data: GraphQLSchema.SelectionSet {
-      let __data: DataDict
-      init(_dataDict: DataDict) { __data = _dataDict }
+    public struct Data: GraphQLSchema.SelectionSet {
+      public let __data: DataDict
+      public init(_dataDict: DataDict) { __data = _dataDict }
 
-      static var __parentType: ApolloAPI.ParentType { GraphQLSchema.Objects.Mutation }
-      static var __selections: [ApolloAPI.Selection] { [
+      public static var __parentType: ApolloAPI.ParentType { GraphQLSchema.Objects.Mutation }
+      public static var __selections: [ApolloAPI.Selection] { [
         .field("createRepository", CreateRepository?.self, arguments: ["input": .variable("input")]),
       ] }
 
       /// Create a new repository.
-      var createRepository: CreateRepository? { __data["createRepository"] }
+      public var createRepository: CreateRepository? { __data["createRepository"] }
 
       /// CreateRepository
       ///
       /// Parent Type: `CreateRepositoryPayload`
-      struct CreateRepository: GraphQLSchema.SelectionSet {
-        let __data: DataDict
-        init(_dataDict: DataDict) { __data = _dataDict }
+      public struct CreateRepository: GraphQLSchema.SelectionSet {
+        public let __data: DataDict
+        public init(_dataDict: DataDict) { __data = _dataDict }
 
-        static var __parentType: ApolloAPI.ParentType { GraphQLSchema.Objects.CreateRepositoryPayload }
-        static var __selections: [ApolloAPI.Selection] { [
+        public static var __parentType: ApolloAPI.ParentType { GraphQLSchema.Objects.CreateRepositoryPayload }
+        public static var __selections: [ApolloAPI.Selection] { [
           .field("__typename", String.self),
           .field("repository", Repository?.self),
         ] }
 
         /// The new repository.
-        var repository: Repository? { __data["repository"] }
+        public var repository: Repository? { __data["repository"] }
 
         /// CreateRepository.Repository
         ///
         /// Parent Type: `Repository`
-        struct Repository: GraphQLSchema.SelectionSet {
-          let __data: DataDict
-          init(_dataDict: DataDict) { __data = _dataDict }
+        public struct Repository: GraphQLSchema.SelectionSet {
+          public let __data: DataDict
+          public init(_dataDict: DataDict) { __data = _dataDict }
 
-          static var __parentType: ApolloAPI.ParentType { GraphQLSchema.Objects.Repository }
-          static var __selections: [ApolloAPI.Selection] { [
+          public static var __parentType: ApolloAPI.ParentType { GraphQLSchema.Objects.Repository }
+          public static var __selections: [ApolloAPI.Selection] { [
             .field("__typename", String.self),
             .field("name", String.self),
           ] }
 
           /// The name of the repository.
-          var name: String { __data["name"] }
+          public var name: String { __data["name"] }
         }
       }
     }

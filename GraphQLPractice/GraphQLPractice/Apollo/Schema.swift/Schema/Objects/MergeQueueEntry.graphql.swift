@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Entries in a MergeQueue
   static let MergeQueueEntry = ApolloAPI.Object(
     typename: "MergeQueueEntry",

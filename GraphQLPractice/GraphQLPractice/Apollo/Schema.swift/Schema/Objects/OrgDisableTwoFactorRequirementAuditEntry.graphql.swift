@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Audit log entry for a org.disable_two_factor_requirement event.
   static let OrgDisableTwoFactorRequirementAuditEntry = ApolloAPI.Object(
     typename: "OrgDisableTwoFactorRequirementAuditEntry",

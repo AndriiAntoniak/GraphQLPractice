@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Audit log entry for a org.disable_saml event.
   static let OrgDisableSamlAuditEntry = ApolloAPI.Object(
     typename: "OrgDisableSamlAuditEntry",

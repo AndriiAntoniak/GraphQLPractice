@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a 'ready_for_review' event on a given pull request.
   static let ReadyForReviewEvent = ApolloAPI.Object(
     typename: "ReadyForReviewEvent",

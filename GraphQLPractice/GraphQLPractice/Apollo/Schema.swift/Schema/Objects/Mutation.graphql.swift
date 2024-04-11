@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// The root query for implementing GraphQL mutations.
   static let Mutation = ApolloAPI.Object(
     typename: "Mutation",

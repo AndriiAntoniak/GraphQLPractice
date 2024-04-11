@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Interfaces {
+public extension GraphQLSchema.Interfaces {
   /// Represents a GitHub Enterprise Importer (GEI) migration.
   static let Migration = Interface(name: "Migration")
 }

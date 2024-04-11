@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Audit log entry for a org.oauth_app_access_blocked event.
   static let OrgOauthAppAccessBlockedAuditEntry = ApolloAPI.Object(
     typename: "OrgOauthAppAccessBlockedAuditEntry",

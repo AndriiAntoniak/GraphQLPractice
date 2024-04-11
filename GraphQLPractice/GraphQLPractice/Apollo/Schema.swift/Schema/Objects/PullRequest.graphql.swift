@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A repository pull request.
   static let PullRequest = ApolloAPI.Object(
     typename: "PullRequest",

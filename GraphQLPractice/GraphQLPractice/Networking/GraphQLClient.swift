@@ -10,14 +10,6 @@ import Foundation
 
 protocol GraphQLClientProtocol: AnyObject {
     @discardableResult
-    func perform<Mutation: GraphQLMutation>(
-        mutation: Mutation,
-        publishResultToStore: Bool,
-        queue: DispatchQueue,
-        resultHandler: GraphQLResultHandler<Mutation.Data>?
-    ) -> Cancellable
-    
-    @discardableResult
     func fetch<Query: GraphQLQuery>(
         query: Query,
         cachePolicy: CachePolicy,
@@ -25,6 +17,45 @@ protocol GraphQLClientProtocol: AnyObject {
         queue: DispatchQueue,
         resultHandler: GraphQLResultHandler<Query.Data>?
     ) -> Cancellable
+    
+    @discardableResult
+    func perform<Mutation: GraphQLMutation>(
+        mutation: Mutation,
+        publishResultToStore: Bool,
+        queue: DispatchQueue,
+        resultHandler: GraphQLResultHandler<Mutation.Data>?
+    ) -> Cancellable
+    
+}
+
+// MARK: - GraphQLClientProtocol+Defaults
+extension GraphQLClientProtocol {
+    @discardableResult
+    func fetch<Query: GraphQLQuery>(
+        query: Query,
+        resultHandler: GraphQLResultHandler<Query.Data>?
+    ) -> Cancellable {
+        fetch(
+            query: query,
+            cachePolicy: .fetchIgnoringCacheCompletely,
+            contextIdentifier: nil,
+            queue: .main,
+            resultHandler: resultHandler
+        )
+    }
+    
+    @discardableResult
+    func perform<Mutation: GraphQLMutation>(
+        mutation: Mutation,
+        resultHandler: GraphQLResultHandler<Mutation.Data>?
+    ) -> Cancellable {
+        perform(
+            mutation: mutation,
+            publishResultToStore: true,
+            queue: .main,
+            resultHandler: resultHandler
+        )
+    }
 }
 
 final class GraphQLClient: GraphQLClientProtocol {
@@ -74,17 +105,21 @@ final class GraphQLClient: GraphQLClientProtocol {
         )
     }
     
+    init(apollo: ApolloClientProtocol) {
+        self.apollo = apollo
+    }
+    
     @discardableResult
     func fetch<Query: GraphQLQuery>(
         query: Query,
-        cachePolicy: CachePolicy = .default,
-        contextIdentifier: UUID? = nil,
-        queue: DispatchQueue = .main,
-        resultHandler: GraphQLResultHandler<Query.Data>? = nil
+        cachePolicy: CachePolicy,
+        contextIdentifier: UUID?,
+        queue: DispatchQueue,
+        resultHandler: GraphQLResultHandler<Query.Data>?
     ) -> Cancellable {
         return apollo.fetch(
             query: query,
-            cachePolicy: .fetchIgnoringCacheCompletely,
+            cachePolicy: cachePolicy,
             contextIdentifier: contextIdentifier,
             queue: queue,
             resultHandler: resultHandler
@@ -94,9 +129,9 @@ final class GraphQLClient: GraphQLClientProtocol {
     @discardableResult
     func perform<Mutation: GraphQLMutation>(
         mutation: Mutation,
-        publishResultToStore: Bool = true,
-        queue: DispatchQueue = .main,
-        resultHandler: GraphQLResultHandler<Mutation.Data>? = nil
+        publishResultToStore: Bool,
+        queue: DispatchQueue,
+        resultHandler: GraphQLResultHandler<Mutation.Data>?
     ) -> Cancellable {
         return apollo.perform(
             mutation: mutation,

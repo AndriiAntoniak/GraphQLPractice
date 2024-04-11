@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Dependency manifest for a repository
   static let DependencyGraphManifest = ApolloAPI.Object(
     typename: "DependencyGraphManifest",

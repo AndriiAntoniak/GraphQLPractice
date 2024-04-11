@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Audit log entry for a private_repository_forking.disable event.
   static let PrivateRepositoryForkingDisableAuditEntry = ApolloAPI.Object(
     typename: "PrivateRepositoryForkingDisableAuditEntry",

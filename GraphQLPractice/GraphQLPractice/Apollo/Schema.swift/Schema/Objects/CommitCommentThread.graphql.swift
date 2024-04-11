@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A thread of comments on a commit.
   static let CommitCommentThread = ApolloAPI.Object(
     typename: "CommitCommentThread",

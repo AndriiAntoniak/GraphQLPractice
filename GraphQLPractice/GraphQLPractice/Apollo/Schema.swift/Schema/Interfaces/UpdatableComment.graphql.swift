@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Interfaces {
+public extension GraphQLSchema.Interfaces {
   /// Comments that can be updated.
   static let UpdatableComment = Interface(name: "UpdatableComment")
 }

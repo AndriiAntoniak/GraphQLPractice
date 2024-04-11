@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A public description of a Marketplace category.
   static let MarketplaceCategory = ApolloAPI.Object(
     typename: "MarketplaceCategory",

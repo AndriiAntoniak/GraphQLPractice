@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a Git tree.
   static let Tree = ApolloAPI.Object(
     typename: "Tree",

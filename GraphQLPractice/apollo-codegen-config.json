@@ -10,14 +10,17 @@
   },
   "output" : {
     "testMocks" : {
-      "none" : {
-      }
+        "absolute" : {
+            "path" : "GraphQLPracticeTests/Apollo/Mocks",
+            "accessModifier" : "internal"
+        }
     },
     "schemaTypes" : {
       "path" : "GraphQLPractice/Apollo/Schema.swift",
       "moduleType" : {
         "embeddedInTarget" : {
-          "name" : "GraphQLPractice"
+          "name" : "GraphQLPractice",
+          "accessModifier": "public"
         }
       }
     },

@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Audit log entry for a repo.destroy event.
   static let RepoDestroyAuditEntry = ApolloAPI.Object(
     typename: "RepoDestroyAuditEntry",

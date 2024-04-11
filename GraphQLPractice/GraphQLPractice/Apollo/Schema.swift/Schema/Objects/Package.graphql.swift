@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Information for an uploaded package.
   static let Package = ApolloAPI.Object(
     typename: "Package",

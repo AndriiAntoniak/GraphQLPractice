@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Audit log entry for a repository_visibility_change.enable event.
   static let RepositoryVisibilityChangeEnableAuditEntry = ApolloAPI.Object(
     typename: "RepositoryVisibilityChangeEnableAuditEntry",

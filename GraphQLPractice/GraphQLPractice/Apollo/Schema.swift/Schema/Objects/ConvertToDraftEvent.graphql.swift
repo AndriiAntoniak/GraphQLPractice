@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a 'convert_to_draft' event on a given pull request.
   static let ConvertToDraftEvent = ApolloAPI.Object(
     typename: "ConvertToDraftEvent",

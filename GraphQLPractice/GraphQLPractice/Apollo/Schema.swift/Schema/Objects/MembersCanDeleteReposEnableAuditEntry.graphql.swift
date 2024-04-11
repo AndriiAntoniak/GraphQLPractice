@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Audit log entry for a members_can_delete_repos.enable event.
   static let MembersCanDeleteReposEnableAuditEntry = ApolloAPI.Object(
     typename: "MembersCanDeleteReposEnableAuditEntry",

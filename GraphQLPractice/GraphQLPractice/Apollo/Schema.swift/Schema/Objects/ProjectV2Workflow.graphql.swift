@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A workflow inside a project.
   static let ProjectV2Workflow = ApolloAPI.Object(
     typename: "ProjectV2Workflow",

@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A release contains the content for a release.
   static let Release = ApolloAPI.Object(
     typename: "Release",

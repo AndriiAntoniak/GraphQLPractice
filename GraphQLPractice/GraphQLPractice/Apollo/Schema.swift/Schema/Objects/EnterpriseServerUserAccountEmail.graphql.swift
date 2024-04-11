@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// An email belonging to a user account on an Enterprise Server installation.
   static let EnterpriseServerUserAccountEmail = ApolloAPI.Object(
     typename: "EnterpriseServerUserAccountEmail",

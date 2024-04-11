@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Interfaces {
+public extension GraphQLSchema.Interfaces {
   /// Entities that can sponsor or be sponsored through GitHub Sponsors.
   static let Sponsorable = Interface(name: "Sponsorable")
 }

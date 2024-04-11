@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// An IP address or range of addresses that is allowed to access an owner's resources.
   static let IpAllowListEntry = ApolloAPI.Object(
     typename: "IpAllowListEntry",

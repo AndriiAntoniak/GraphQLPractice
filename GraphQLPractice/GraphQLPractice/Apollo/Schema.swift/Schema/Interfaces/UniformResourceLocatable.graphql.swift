@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Interfaces {
+public extension GraphQLSchema.Interfaces {
   /// Represents a type that can be retrieved by a URL.
   static let UniformResourceLocatable = Interface(name: "UniformResourceLocatable")
 }

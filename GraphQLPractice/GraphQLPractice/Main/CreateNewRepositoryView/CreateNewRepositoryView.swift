@@ -64,7 +64,9 @@ struct CreateNewRepositoryView<ViewModel: CreateRepositoryViewModelProtocol>: Vi
     CreateNewRepositoryView(
         shouldPresentAddRepoView: .constant(true),
         viewModel: CreateRepositoryViewModel(
-            repositoriesNetworking: RepositoriesNetworking()
+            repositoriesNetworking: RepositoriesNetworking(
+                graphQLClient: GraphQLClient()
+            )
         )
     )
 }

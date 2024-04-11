@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// The user's description of what they're currently doing.
   static let UserStatus = ApolloAPI.Object(
     typename: "UserStatus",

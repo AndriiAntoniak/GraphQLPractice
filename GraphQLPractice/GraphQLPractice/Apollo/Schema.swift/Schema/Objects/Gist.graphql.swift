@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A Gist.
   static let Gist = ApolloAPI.Object(
     typename: "Gist",

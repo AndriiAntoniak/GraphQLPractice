@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A GitHub Sponsors tier associated with a GitHub Sponsors listing.
   static let SponsorsTier = ApolloAPI.Object(
     typename: "SponsorsTier",

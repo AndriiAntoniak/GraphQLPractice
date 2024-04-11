@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a 'mentioned' event on a given issue or pull request.
   static let MentionedEvent = ApolloAPI.Object(
     typename: "MentionedEvent",

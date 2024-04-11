@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Audit log entry for a org.unblock_user
   static let OrgUnblockUserAuditEntry = ApolloAPI.Object(
     typename: "OrgUnblockUserAuditEntry",

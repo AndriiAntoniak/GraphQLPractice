@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a Git blob.
   static let Blob = ApolloAPI.Object(
     typename: "Blob",

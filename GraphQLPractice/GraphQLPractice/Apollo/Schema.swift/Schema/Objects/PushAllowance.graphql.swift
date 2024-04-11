@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A team, user, or app who has the ability to push to a protected branch.
   static let PushAllowance = ApolloAPI.Object(
     typename: "PushAllowance",

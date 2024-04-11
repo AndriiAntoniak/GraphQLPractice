@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A threaded list of comments for a given pull request.
   static let PullRequestThread = ApolloAPI.Object(
     typename: "PullRequestThread",

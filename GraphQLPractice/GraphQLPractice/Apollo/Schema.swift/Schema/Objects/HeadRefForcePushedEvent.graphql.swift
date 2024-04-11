@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// Represents a 'head_ref_force_pushed' event on a given pull request.
   static let HeadRefForcePushedEvent = ApolloAPI.Object(
     typename: "HeadRefForcePushedEvent",

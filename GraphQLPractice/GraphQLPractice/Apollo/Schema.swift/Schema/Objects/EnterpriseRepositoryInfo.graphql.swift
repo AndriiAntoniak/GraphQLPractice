@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A subset of repository information queryable from an enterprise.
   static let EnterpriseRepositoryInfo = ApolloAPI.Object(
     typename: "EnterpriseRepositoryInfo",

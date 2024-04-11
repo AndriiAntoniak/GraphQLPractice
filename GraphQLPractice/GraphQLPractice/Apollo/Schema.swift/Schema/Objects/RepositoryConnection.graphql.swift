@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-extension GraphQLSchema.Objects {
+public extension GraphQLSchema.Objects {
   /// A list of repositories owned by the subject.
   static let RepositoryConnection = ApolloAPI.Object(
     typename: "RepositoryConnection",
